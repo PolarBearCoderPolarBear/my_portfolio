@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <style>
+        /* Base Styles & "Dark Mode" Theme */
+        body {
+            background-color: #0b0b0b; /* Deep Black */
+            color: #e0e0e0; /* Off-white for readability */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #8e44ad; /* Purple Accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #bb86fc; /* Light Purple */
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Resume Section (Landing) */
+        .resume-preview {
+            background-color: #121212;
+            padding: 40px;
+            border-radius: 8px;
+            border-left: 5px solid #8e44ad;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            margin-bottom: 50px;
+        }
+
+        h1, h2 {
+            color: #bb86fc;
+        }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #bb86fc;
+        }
+
+        .project-card img {
+            max-width: 1000%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #8e44ad;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-size: 1.5rem; font-weight: bold; color: #fff;">Portfolio</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        <section class="resume-preview">
+            <h1>Expert Professional</h1>
+            <p style="font-style: italic; color: #aaa;">Specializing in efficient, data-driven processes.</p>
+            <hr style="border: 0.5px solid #333; margin: 20px 0;">
+            
+            <h3>Professional Summary</h3>
+            <p>High-impact professional with a focus on optimization and automation. This section acts as a quick-view of my experience and core competencies.</p>
+            
+            <h3>Key Expertise</h3>
+            <ul>
+                <li>Strategic Process Design</li>
+                <li>Data Visualization & Reporting</li>
+                <li>Automation Tools</li>
+            </ul>
+        </section>
+
+        <h2 id="projects">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200" alt="Project Image">
+                <h3>Process Optimization Dashboard</h3>
+                <p>An interactive dashboard tracking efficiency metrics and performance targets.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200" alt="Project Image">
+                <h3>Automation Tool</h3>
+                <p>A custom script or application built to scale repetitive tasks effortlessly.</p>
+                <a href="#" class="btn">View Files</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
