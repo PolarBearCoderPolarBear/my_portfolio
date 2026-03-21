@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phillip Oliver Portfolio</title>
+    <style>
+        /* Base Styles & "Dark Mode" Theme */
+        body {
+            background-color: #0b0b0b; /* Deep Black */
+            color: #e0e0e0; /* Off-white for readability */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
+        /* Navigation Bar */
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #8e44ad; /* Purple Accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #bb86fc; /* Light Purple */
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1500px;
+            margin: 40px auto;
+            padding: 2% 2%;
+        }
+
+        /* Styling for the PDF container */
+        .pdf-frame-container {
+            
+            border: 2px solid #8e44ad; /* Our signature purple */
+            border-radius: 8px;
+            overflow: hidden; /* Keeps the corners rounded */
+            background-color: #1a1a1a;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            padding: 2%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+
+                /* Responsive adjustment for mobile */
+        @media (max-width: 100%) {
+            iframe {
+                height: 300px; /* Shorter frame on mobile devices */
+        }
+}
+
+        h1, h2 {
+            color: #bb86fc;
+        }
+
+        .center-image-portrait {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%; 
+            height: 15%;
+        }
+        
+ </style>
+</head>
+
+<body>
+    <div>
+        <h3 style="font-size: 2rem; color: #bb86fc; font-weight: bold; text-align: center;">PHILLIP OLIVER PORTFOLIO</h3>        
+        <img src="phil_headshot.png" alt="Portrait of Phillip Oliver" class="center-image-portrait">
+        <p style="font-size: 1rem; color: #bb86fc; font-weight: bold; text-align: center;">"Returning your TA organization time and money through automation, optimization, and increasing predictability"</p>
+    </div>
+
+    <nav>
+       <div style="font-size: 1rem; font-weight:bold; color: #fff; text-align: center;">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </nav>
+
+</body>
+</html>
